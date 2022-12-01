@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Quando:wght@100;300;400;500;600&display=swap');
+
+
+:root{
+    --red: #ff0000;
+    --yellow:#f9d806;
+    --light-yellow:#ffee80;
+    --black:#130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.1rem solid rgba(0,0,0,.1);
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+.checked{
+    color: orange;
+}
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.services .box-container .box{
+    padding:2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    text-align: center;
+}
+
+.services .box-container .box i{
+    height:6rem;
+    width:6rem;
+    line-height: 6rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background:yellow;
+    color:red;
+}
+
+.services .box-container .box h3{
+    font-size: 2.2rem;
+    color:var(--black);
+}
+
+.services .box-container .box p{
+    line-height: 1.8;
+    padding:1rem 0;
+    font-size: 1.4rem;
+    color:var(--light-color);
+}
+
+.services .box-container .box:hover{
+    background: var(--red);
+}
+
+.services .box-container .box:hover h3{
+    color: var(--red);
+}
+
+.services .box-container .box:hover p{
+    color:#eee;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 3rem;
+    background:red;
+    color:var(--black);
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    font-weight: 500;
+    text-align: center;
+}
+.heading{
+    padding-bottom: 2rem;
+    text-align: center;
+    font-size: 4.5rem;
+    color:var(--black);
+}
+section{
+    padding:2rem 9%;
+}
+*{
+    font-family: 'Quando', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-align: justify-all;
+
+}
+.myDiv{
+    font-family: 'Quando', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-align: left;
+    font-size: 1.79vw;
+    height: auto;
+    width: auto;
+
+}
+.myDiv11{
+    font-family: 'Quando', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-align: justify-all;
+    font-size: 1.79vw;
+    height: auto;
+    width: auto;
+
+}
+.gall{
+     display: flex;
+     align-items: center;
+    position: relative;
+    justify-content: space-between;
+    align-content: space-between;
+      display: flex;
+      font-size: 1.79vw;
+    
+}
+.gall1{
+    display: grid;
+     align-items:left;
+    position: relative;
+    justify-content: space-between;
+    align-content: space-between;
+      display: flex;
+      font-size: 1.79vw;
+}
+
+
+.myDiv2{
+    font-family: 'Quando', sans-serif;
+    font-size: 1.35vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+     align-content: space-between;
+     align-self: center;
+     text-decoration: blink;
+    
+}
+.dot{
+    height: auto;
+    width: auto;
+    background-color: yellow;
+    border-radius: 100%;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    text-align: center;
+    align-content: space-between;
+      display: grid;
+
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0; left:0; right:0;
+    padding:3rem 9%;
+    z-index: 1000;
+    background: #fff;
+    font-family: 'Peralta';
+    text-transform: capitalize;
+}
+.header .logo span{
+    color:var(--red);
+}
+.header .logo{
+    font-size: 5.5rem;
+    color:var(--black);
+    font-weight: bold;
+}
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 2.5rem;
+    color:var(--black);
+}
+.header .navbar a:hover{
+    color:var(--red);
+}
+#menu-btn{
+    font-size: 2.5rem;
+    color:var(--light-color);
+    display: none;
+}
+.header.active{
+    padding:2rem 9%;
+    box-shadow: var(--box-shadow);
+}
+.home{
+    padding-top: 10rem;
+    text-align: justify;
+    overflow-x: hidden;
+}
+
+.home h1{
+    color: var(--black);
+    font-size: 3.2vw;
+    text-transform: uppercase;
+}
+
+.home h3{
+    color:var(--black);
+    font-size:2vw;
+    text-transform: uppercase;
+    
+}
+
+.home p{
+    color: var(--black);
+    font-size: 1.5vw;
+}
+
+
+.home .p figure{
+    font-size: 1.79vw;
+    color: var(--border);
+
+}
+.home table{
+    align-self: center;
+}
+.home img{
+    width:100%;
+    margin:1rem 0;
+}
+
+.contact .row form {
+    padding: 2rem;
+    flex: 1 1 42rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    text-align: center;
+    border-radius: .5rem;
+}
+.footer .credit{
+    text-align: center;
+    padding:1.5rem;
+    padding-top: 2.5rem;
+    margin-top: 2rem;
+    border-top: var(--border);
+    font-size: 2rem;
+    color:var(--black);
+}
+
+.footer .credit a{
+    color: white;
+    background-color: darkgreen;
+}
+footer{
+    margin-right: 10rem;
+    margin-left: 10rem;
+ float: center;
+ display: inline-block;
+position: relative;
+justify-content: space-between;
+padding: 5px 5px;
+align-items: center;
+display: flex;
+font-size: 30px;
+}
+ 
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:1.5rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    padding:1rem 0;
+    color:var(--black);
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.4rem;
+    padding:1rem 0;
+    color:var(--light-color);
+}
+
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color:var(--black);
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    column-width: auto;
+
+}
+.box-container .box {
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    text-align:auto;
+    height: auto;
+    width: auto;
+
+}
+.box-container .pic {
+    padding: 2rem;
+    height: auto;
+    width: auto;
+}
+.box-container .boxx {
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    text-align: left;
+    height: auto;
+    width: 50%;
+    float: left;
+}
+.box-container .boxx1 {
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    text-align: left;
+    height: auto;
+    width: 100%;
+    float: left;
+}
+.box-container .boxx2 {
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    text-align: left;
+    height: auto;
+    width: 100%;
+    float: left;
+}
+
+.box-container .boxxx {
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    text-align: center;
+    height:auto;
+    width: auto;
+    align-self: left;
+    align-content: justify;
+}
+
+/*PICTURE'S ANIMATION*/
+#outerbox
+{
+    margin-top: 50px;
+    color: blue;
+width: 800px;
+overflow: hidden;
+}
+#sliderbox
+{
+position: relative;
+width: 3200px;
+animation-name:Motumi;
+animation-duration: 10s;
+animation-iteration-count:infinite;
+margin-left: 0px;}
+#sliderbox img{
+    float: left;
+}
+@keyframes Motumi{
+0%
+{
+left: 0px;
+}
+20%
+{
+left: 0px;  
+}
+25%
+{
+    left: -800px;
+} 
+45%
+{
+    left: -800px;
+}
+50%
+{
+    left: -1600px;
+}
+70%
+{
+    left: -1600px;
+}
+70%
+{
+    left: -1600px;
+}
+75%
+{
+    left: -2400px;
+}
+95%
+{
+    left: -2400px;
+}
+100%
+{
+    left:-3200px;  
+}
